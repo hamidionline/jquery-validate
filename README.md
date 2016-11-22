@@ -9,13 +9,13 @@ https://ryanlittle.github.io/validate.js
 
 ## Usage:
 
-1. Add the validate.js file to your project
+- Add the validate.js file to your project
 
   ```html
   <script src="validate.min.js"></script>
   ```
 
-2. Set up your form(s), adding a `data-validate` attribute to the fields you want to validate
+- Set up your form(s), adding a `data-validate` attribute to the fields you want to validate
 
   ```html
   <form id="form" action="" method="post">
@@ -28,7 +28,7 @@ https://ryanlittle.github.io/validate.js
 
   To validate an email address, the input needs to have `type="email"`.
 
-3. Initialize the plugin with `.validate()`
+- Initialize the plugin with `.validate()`
 
   ```javascript
   $('#form').validate();
@@ -46,7 +46,7 @@ https://ryanlittle.github.io/validate.js
   });
   ```
 
-5. Optionally, add CSS styles for the validate elements:
+- Optionally, add CSS styles for the validate elements:
 
   ```css
   /* Class added to error input elements */

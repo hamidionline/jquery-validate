@@ -1,5 +1,5 @@
 {
-  "name": "validate.js",
+  "name": "jquery-validate",
   "version": "1.0.0",
   "description": "A lightweight jQuery plugin for form validation",
   "main": "src/validate.js",
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/ryanlittle/validate.js/issues"
   },
-  "homepage": "https://github.com/ryanlittle/validate.js",
+  "homepage": "https://ryanplittle.com/validate.js/",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-header": "^1.8.8",
