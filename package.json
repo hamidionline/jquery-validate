@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/ryanlittle/validate.js/issues"
   },
-  "homepage": "https://ryanplittle.com/validate.js/",
+  "homepage": "https://ryanlittle.github.io/validate.js",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-header": "^1.8.8",
