@@ -2,10 +2,10 @@
   "name": "jquery-validate",
   "version": "1.0.0",
   "description": "A lightweight jQuery plugin for form validation",
-  "main": "src/validate.js",
+  "main": "dist/validate.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ryanlittle/validate.js.git"
+    "url": "https://github.com/ryanlittle/validate.js.git"
   },
   "keywords": [
     "jquery-plugin",
