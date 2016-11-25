@@ -1,25 +1,26 @@
 {
   "name": "jquery-validate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight jQuery plugin for form validation",
   "main": "dist/validate.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ryanlittle/validate.js.git"
+    "url": "https://github.com/ryanlittle/jquery-validate.git"
   },
   "keywords": [
     "jquery-plugin",
     "ecosystem:jquery",
     "jquery",
+    "validate",
     "validation",
     "form"
   ],
   "author": "ryanlittle <ryan@ryanplittle.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ryanlittle/validate.js/issues"
+    "url": "https://github.com/ryanlittle/jquery-validate/issues"
   },
-  "homepage": "https://ryanlittle.github.io/validate.js",
+  "homepage": "https://ryanlittle.github.io/jquery-validate",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-header": "^1.8.8",

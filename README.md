@@ -1,13 +1,19 @@
-# validate.js
+# jQuery Validate
 
 A lightweight jQuery plugin for form validation
 
 ### Demo:
-https://ryanlittle.github.io/validate.js
+https://ryanlittle.github.io/jquery-validate
 
 ---
 
 ## Usage:
+
+- Ensure that you have jQuery in your project
+
+  ```html
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  ```
 
 - Add the validate.js file to your project
 

@@ -1,8 +1,8 @@
 /*!
- * validate.js 1.0.0
+ * jquery-validate 1.0.1
  * A lightweight jQuery plugin for form validation
  *
- * https://github.com/ryanlittle/validate.js
+ * https://ryanlittle.github.io/jquery-validate
  * @license MIT
  */
 
