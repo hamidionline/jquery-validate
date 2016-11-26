@@ -77,7 +77,7 @@
       event.preventDefault();
 
       // Add `data-submitted` attribute to form
-      $(form).attr('data-submitted', '');
+      $(this).attr('data-submitted', '');
 
       // Validate form
       runValidation(this);

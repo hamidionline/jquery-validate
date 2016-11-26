@@ -1,5 +1,5 @@
 /*!
- * jquery-validate 1.0.1
+ * jquery-validate 1.0.2
  * A lightweight jQuery plugin for form validation
  *
  * https://ryanlittle.github.io/jquery-validate
@@ -85,7 +85,7 @@
       event.preventDefault();
 
       // Add `data-submitted` attribute to form
-      $(form).attr('data-submitted', '');
+      $(this).attr('data-submitted', '');
 
       // Validate form
       runValidation(this);
