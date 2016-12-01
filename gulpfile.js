@@ -2,8 +2,12 @@
 
 const gulp            = require('gulp');
 const header          = require('gulp-header');
-const uglify          = require('gulp-uglify');
 const rename          = require('gulp-rename');
+
+const jscs            = require('gulp-jscs');
+const stylish         = require('gulp-jscs-stylish');
+const uglify          = require('gulp-uglify');
+
 const pkg             = require('./package.json');
 
 const banner = ['/*!',
@@ -16,17 +20,26 @@ const banner = ['/*!',
   '',
   ''].join('\n');
 
-gulp.task('scripts', () => {
+gulp.task('lint-scripts', function () {
+  return gulp.src(['src/*.js'])
+    .pipe(jscs({ fix: true }))
+    .pipe(stylish())
+    .pipe(jscs.reporter('fail'))
+    .pipe(gulp.dest('src/'));
+});
+
+gulp.task('scripts', function () {
   return gulp.src(['src/*.js'])
     .pipe(header(banner, { pkg: pkg }))
     .pipe(gulp.dest('dist'))
     .pipe(uglify())
     .pipe(header(banner, { pkg: pkg }))
     .pipe(rename({ suffix: '.min', extname: '.js' }))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist'));
 });
 
-gulp.task('watch', () => {
+gulp.task('watch', function () {
+  gulp.watch(['src/*.js'], ['lint-scripts']);
   gulp.watch(['src/*.js'], ['scripts']);
 });
 

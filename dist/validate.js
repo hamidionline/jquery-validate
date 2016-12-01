@@ -10,7 +10,7 @@
   'use strict';
 
   $.fn.validate = function (options) {
-    
+
     var defaults = {
       messageRequired: 'Required',
       messageEmail: 'Invalid Email',
@@ -48,7 +48,7 @@
     }
 
     // Check input instance
-    function checkInput(input) {
+    function checkInput (input) {
       inputType = $(input).attr('type');
 
       if (!input.value) {
@@ -79,7 +79,7 @@
     $(document).on('keyup', $form.selector + '[data-submitted] [data-validate]', function () {
       checkInput(this);
     });
-    
+
     // Submit event
     $form.on('submit', function (event) {
       event.preventDefault();
@@ -107,7 +107,7 @@
       }
 
     });
-   
+
   };
 
 }(jQuery));

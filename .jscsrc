@@ -1,0 +1,15 @@
+{
+  "preset": "airbnb",
+  "disallowQuotedKeysInObjects": false,
+  "requireTrailingComma": false,
+  "requireLineFeedAtFileEnd": false,
+  "requirePaddingNewLinesBeforeLineComments": false,
+  "requirePaddingNewLinesAfterBlocks": false,
+  "safeContextKeyword": false,
+  "maximumLineLength": {
+    "value": 200,
+    "allExcept": [
+      "urlComments"
+    ]
+  }
+}
