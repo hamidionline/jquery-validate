@@ -22,25 +22,25 @@
     $inputs.after('<span class="validate-message" />');
 
     // Validation fail
-    function validationFail (input, message) {
+    function validationFail(input, message) {
       $(input).addClass('validate-error');
       $(input).next().text(message);
       validForm = false;
     }
 
     // Validation pass
-    function validationPass (input) {
+    function validationPass(input) {
       $(input).removeClass('validate-error');
       $(input).next().text('');
     }
 
     // Validate email
-    function validateEmail (email) {
+    function validateEmail(email) {
       return regex.test(email);
     }
 
     // Check input instance
-    function checkInput (input) {
+    function checkInput(input) {
       inputType = $(input).attr('type');
 
       if (!input.value) {
@@ -60,7 +60,7 @@
     }
 
     // Validate all inputs
-    function runValidation (form) {
+    function runValidation(form) {
       validForm = true;
       $inputs.each(function () {
         checkInput(this);
